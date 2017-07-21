@@ -75,7 +75,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 ######################### zsh options ################################
