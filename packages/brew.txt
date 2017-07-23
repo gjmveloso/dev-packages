@@ -28,3 +28,4 @@ xz
 zsh
 zsh-completions
 zsh-syntax-highlighting
+font-fira-code
