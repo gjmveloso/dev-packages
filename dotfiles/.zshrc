@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/velosog/.oh-my-zsh
@@ -75,8 +76,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-export PATH="/usr/local/opt/node@6/bin:$PATH"
 
 ######################### zsh options ################################
 setopt ALWAYS_TO_END           # Push that cursor on completions.
@@ -104,3 +103,4 @@ HISTFILE=~/.history
 
 alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
+alias start-presentation="caffeinate -u -t 3600"
