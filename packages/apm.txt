@@ -35,7 +35,7 @@
 ├── linter-ui-default@1.6.8
 ├── linter-write-good@0.9.0
 ├── linter-xmllint@1.4.3
-├── markdown-pdf@2.0.4
+├── markdown-pdf@2.1.0
 ├── markdown-preview-plus@2.4.10
 ├── minimap@4.29.6
 ├── pigments@0.40.2
