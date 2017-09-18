@@ -4,10 +4,12 @@ elixir
 erlang
 gdbm
 git
+gmp
 htop
 httpie
 ipython
 jpeg
+libffi
 libpng
 libpq
 libtiff
