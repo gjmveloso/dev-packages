@@ -1,3 +1,5 @@
+autoconf
+automake
 awscli
 dtrx
 elixir
@@ -8,16 +10,20 @@ gmp
 htop
 httpie
 ipython
+ipython@5
 jpeg
+jupyter
 libffi
 libpng
 libpq
 libtiff
+libtool
 libyaml
 mycli
 node@6
 openssl
 p7zip
+pandoc
 pcre
 pgcli
 pkg-config
