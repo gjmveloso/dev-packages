@@ -1,7 +1,8 @@
-[36mCommunity Packages (42)[39m /Users/velosog/.atom/packages
+[36mCommunity Packages (44)[39m /Users/velosog/.atom/packages
 ├── atom-beautify@0.30.5
 ├── atom-bootstrap3@1.2.12
 ├── atom-handlebars@1.3.0
+├── atom-ide-ui@0.4.0
 ├── autoclose-html@0.23.0
 ├── autocomplete-elixir@1.5.15
 ├── autocomplete-javascript@0.0.2
@@ -16,6 +17,7 @@
 ├── file-icons@2.1.12
 ├── git-time-machine@1.5.9
 ├── hyperclick@0.1.5
+├── ide-typescript@0.6.1
 ├── intentions@1.1.5
 ├── javascript-snippets@1.2.1
 ├── js-hyperclick@1.11.1
