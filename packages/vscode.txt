@@ -1,0 +1,12 @@
+dbaeumer.vscode-eslint
+DotJoshJohnson.xml
+eamodio.gitlens
+eg2.tslint
+ms-python.python
+ms-vscode.csharp
+ms-vscode.PowerShell
+PeterJausovec.vscode-docker
+rebornix.Ruby
+robertohuertasm.vscode-icons
+swyphcosmo.spellchecker
+vsmobile.vscode-react-native

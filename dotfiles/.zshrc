@@ -2,6 +2,8 @@
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export PATH="/usr/local/opt/node@8/bin:$PATH"
 
+export HOMEBREW_NO_ANALYTICS=1
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/velosog/.oh-my-zsh
 
@@ -52,7 +54,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx git aws npm)
+plugins=(osx git aws npm docker kubectl)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -102,6 +104,8 @@ HISTFILE=~/.history
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias atom="code"
 alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
 alias start-presentation="caffeinate -u -t 3600"
+

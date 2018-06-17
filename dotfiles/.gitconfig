@@ -1,0 +1,5 @@
+[user]
+	email = velosog@amazon.com
+	name = Gustavo Veloso
+[core]
+	editor = code --wait
