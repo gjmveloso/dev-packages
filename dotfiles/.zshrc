@@ -109,3 +109,4 @@ alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
 alias start-presentation="caffeinate -u -t 3600"
 
+export PATH=$HOME/.toolbox/bin:$PATH
