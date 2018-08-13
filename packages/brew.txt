@@ -1,5 +1,6 @@
 awscli
 dtrx
+eksctl
 gdbm
 git
 go
@@ -9,6 +10,7 @@ instantclient-sdk
 ipython
 kops
 kubernetes-cli
+kubernetes-helm
 libpq
 libtool
 libyaml
@@ -35,4 +37,6 @@ zeromq
 zsh
 zsh-completions
 zsh-syntax-highlighting
+anaconda
+docker
 font-fira-code

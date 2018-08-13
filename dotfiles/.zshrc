@@ -54,7 +54,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx git aws npm docker kubectl)
+plugins=(osx git aws npm docker kubectl vscode)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -110,3 +110,4 @@ alias myip-all="curl ifconfig.me/all"
 alias start-presentation="caffeinate -u -t 3600"
 
 export PATH=$HOME/.toolbox/bin:$PATH
+export PATH=/usr/local/anaconda3/bin:"$PATH"
