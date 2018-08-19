@@ -1,3 +1,4 @@
+ban.spellright
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 DotJoshJohnson.xml
@@ -8,7 +9,6 @@ HookyQR.beautify
 ms-mssql.mssql
 ms-python.anaconda-extension-pack
 ms-python.python
-ms-vscode.atom-keybindings
 ms-vscode.cpptools
 ms-vscode.csharp
 ms-vscode.PowerShell
