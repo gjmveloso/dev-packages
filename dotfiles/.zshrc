@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH=/usr/local/miniconda3/bin:"$PATH"
+
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
 
@@ -112,7 +114,6 @@ alias myip-all="curl ifconfig.me/all"
 alias start-presentation="caffeinate -u -t 3600"
 
 export PATH=$HOME/.toolbox/bin:$PATH
-export PATH=/usr/local/anaconda3/bin:"$PATH"
 
 TRAPWINCH() {
   zle && { zle reset-prompt; zle -R }
