@@ -1,12 +1,10 @@
 ban.spellright
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
-DotJoshJohnson.xml
 eamodio.gitlens
 eg2.tslint
-eg2.vscode-npm-script
 HookyQR.beautify
-ms-mssql.mssql
+joaompinto.asciidoctor-vscode
 ms-python.anaconda-extension-pack
 ms-python.python
 ms-vscode.cpptools
@@ -16,5 +14,4 @@ PeterJausovec.vscode-docker
 rebornix.ruby
 redhat.vscode-yaml
 robertohuertasm.vscode-icons
-VisualStudioExptTeam.vscodeintellicode
 vsmobile.vscode-react-native

@@ -1,12 +1,9 @@
 /usr/local/lib
-├── @aws-amplify/cli@0.1.14
-├── aws-cdk@0.8.2
-├── babel-eslint@8.2.6
-├── cli@1.0.1
-├── create-react-native-app@1.0.0
-├── ember-cli@3.3.0
-├── eslint@5.4.0
-├── gatsby-cli@1.1.58
-├── npm@6.4.0
-└── parcel-bundler@1.9.7
+├── @aws-amplify/cli@0.1.29
+├── aws-cdk@0.13.0
+├── ember-cli@3.5.0
+├── eslint@5.7.0
+├── gatsby-cli@2.4.3
+├── npm@6.4.1
+└── parcel-bundler@1.10.3
 

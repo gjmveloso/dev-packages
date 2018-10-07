@@ -5,6 +5,7 @@ export PATH=/usr/local/miniconda3/bin:"$PATH"
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_EDITOR=code
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/velosog/.oh-my-zsh
@@ -111,7 +112,6 @@ HISTFILE=~/.history
 alias atom="code"
 alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
-alias start-presentation="caffeinate -u -t 3600"
 
 export PATH=$HOME/.toolbox/bin:$PATH
 
