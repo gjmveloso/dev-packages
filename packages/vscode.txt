@@ -1,5 +1,6 @@
 amazonwebservices.aws-toolkit-vscode
 aws-amplify.aws-amplify-vscode
+aws-scripting-guy.cform
 ban.spellright
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
@@ -7,14 +8,14 @@ eamodio.gitlens
 HookyQR.beautify
 joaompinto.asciidoctor-vscode
 kddejong.vscode-cfn-lint
+ms-azuretools.vscode-docker
 ms-python.anaconda-extension-pack
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.csharp
 ms-vscode.powershell
 ms-vscode.vscode-typescript-tslint-plugin
-PeterJausovec.vscode-docker
+msjsdiag.vscode-react-native
 rebornix.ruby
 redhat.vscode-yaml
 vscode-icons-team.vscode-icons
-vsmobile.vscode-react-native

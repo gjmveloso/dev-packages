@@ -1,6 +1,7 @@
 amazon-ecs-cli
 autoconf
 aws-elasticbeanstalk
+aws-iam-authenticator
 awscli
 cmake
 curl
@@ -21,6 +22,7 @@ libev
 libssh2
 libyaml
 media-info
+mtr
 ncurses
 node
 oniguruma
@@ -48,6 +50,7 @@ zsh
 zsh-completions
 zsh-history-substring-search
 zsh-syntax-highlighting
+corretto
 docker
 dotnet-sdk
 font-fira-code
