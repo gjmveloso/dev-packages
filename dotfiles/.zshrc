@@ -60,7 +60,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
 
-plugins=(osx git aws npm docker kubectl vscode)
+plugins=(osx git aws npm docker kubectl vscode zsh-completions history-substring-search)
 
 # User configuration
 
@@ -116,6 +116,5 @@ TRAPWINCH() {
   zle && { zle reset-prompt; zle -R }
 }
 
-autoload -U compinit
-compinit
+autoload -U compinit && compinit
 
