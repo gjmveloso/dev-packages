@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
@@ -111,6 +112,10 @@ alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
 
 export PATH=$HOME/.toolbox/bin:$PATH
+
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 TRAPWINCH() {
   zle && { zle reset-prompt; zle -R }

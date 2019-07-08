@@ -16,6 +16,7 @@ ms-vscode.csharp
 ms-vscode.powershell
 ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.vscode-react-native
+octref.vetur
 rebornix.ruby
 redhat.vscode-yaml
 vscode-icons-team.vscode-icons

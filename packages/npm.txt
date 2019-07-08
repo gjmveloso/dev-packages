@@ -1,7 +1,8 @@
 /usr/local/lib
-├── @aws-amplify/cli@1.7.5
+├── @aws-amplify/cli@1.7.8
 ├── artillery@1.6.0-28
 ├── aws-amplify@1.1.29
-├── npm@6.9.0
+├── eslint@6.0.1
+├── npm@6.10.0
 └── parcel-bundler@1.12.3
 
