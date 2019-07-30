@@ -32,8 +32,9 @@ packer
 pcre
 pcre2
 pkg-config
+pyenv
+pyenv-virtualenv
 python
-python@2
 rbenv
 readline
 ruby
@@ -44,7 +45,6 @@ telnet
 unrar
 watchman
 xz
-yarn
 zeromq
 zsh
 zsh-completions
