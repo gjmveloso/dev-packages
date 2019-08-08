@@ -110,6 +110,8 @@ HISTFILE=~/.history
 alias atom="code"
 alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
+alias bzip="gtar -jcvf"
+alias gzip="gtar -zcvf"
 
 export PATH=$HOME/.toolbox/bin:$PATH
 

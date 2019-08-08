@@ -3,6 +3,7 @@ autoconf
 aws-elasticbeanstalk
 aws-iam-authenticator
 awscli
+cfn-lint
 cmake
 curl
 dtrx
@@ -13,6 +14,7 @@ gettext
 git
 git-flow
 git-secrets
+gnu-tar
 icu4c
 ipython
 jq
