@@ -15,6 +15,7 @@ git
 git-flow
 git-secrets
 gnu-tar
+go
 icu4c
 ipython
 jq
@@ -56,5 +57,6 @@ corretto
 docker
 dotnet-sdk
 font-fira-code
+postman
 the-unarchiver
 vlc
