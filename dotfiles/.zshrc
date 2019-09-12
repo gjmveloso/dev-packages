@@ -1,12 +1,13 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
+export PATH=~/.cargo/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/velosog/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.

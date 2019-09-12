@@ -13,10 +13,12 @@ ms-python.anaconda-extension-pack
 ms-python.python
 ms-vscode.cpptools
 ms-vscode.csharp
+ms-vscode.Go
 ms-vscode.powershell
 ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.vscode-react-native
 octref.vetur
 rebornix.ruby
 redhat.vscode-yaml
+rust-lang.rust
 vscode-icons-team.vscode-icons

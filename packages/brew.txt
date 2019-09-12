@@ -30,6 +30,7 @@ ncurses
 node
 oniguruma
 openssl
+openssl@1.1
 p7zip
 packer
 pcre
@@ -57,6 +58,7 @@ corretto
 docker
 dotnet-sdk
 font-fira-code
+libreoffice
 postman
 the-unarchiver
 vlc
