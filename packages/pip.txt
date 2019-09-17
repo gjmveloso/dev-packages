@@ -7,8 +7,8 @@ aws-lambda-builders 0.4.0
 aws-sam-cli         0.21.0   
 aws-sam-translator  1.11.0   
 binaryornot         0.4.4    
-boto3               1.9.227  
-botocore            1.12.227 
+boto3               1.9.229  
+botocore            1.12.229 
 certifi             2019.6.16
 chardet             3.0.4    
 chevron             0.13.1   
