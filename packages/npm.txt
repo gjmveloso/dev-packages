@@ -1,13 +1,13 @@
 /usr/local/lib
-├── @angular/cli@1.7.4
-├── @aws-amplify/cli@2.0.0
-├── @vue/cli@3.11.0
-├── artillery@1.6.0-28
-├── aws-cdk@1.8.0
+├── @aws-amplify/cli@3.14.0
+├── @vue/cli@3.12.0
+├── artillery@1.6.0-29
+├── aws-cdk@1.12.0
 ├── cypress@3.4.1
-├── eslint@6.4.0
-├── newman@4.5.4
-├── npm@6.11.3
-├── parcel-bundler@1.12.3
-└── typescript@3.6.3
+├── eslint@6.5.1
+├── gulp@4.0.2
+├── lerna@3.17.0
+├── newman@4.5.5
+├── npm@6.12.0
+└── parcel-bundler@1.12.4
 

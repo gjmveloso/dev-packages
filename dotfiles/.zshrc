@@ -6,6 +6,10 @@ export PATH=~/.cargo/bin:$PATH
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
@@ -115,10 +119,6 @@ alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 
 export PATH=$HOME/.toolbox/bin:$PATH
-
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 TRAPWINCH() {
   zle && { zle reset-prompt; zle -R }

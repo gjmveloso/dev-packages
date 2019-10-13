@@ -12,7 +12,6 @@ eksctl-aws-iam-authenticator
 gdbm
 gettext
 git
-git-flow
 git-secrets
 gnu-tar
 go
@@ -43,7 +42,7 @@ rbenv
 readline
 ruby
 ruby-build
-rust
+rustup-init
 sqlite
 telnet
 unrar
@@ -55,10 +54,10 @@ zsh-completions
 zsh-history-substring-search
 zsh-syntax-highlighting
 corretto
+dbeaver-community
 docker
 dotnet-sdk
 font-fira-code
-libreoffice
 postman
 the-unarchiver
 vlc
