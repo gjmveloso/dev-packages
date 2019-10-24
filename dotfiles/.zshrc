@@ -12,6 +12,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
+export SHELL=/usr/local/bin/zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
