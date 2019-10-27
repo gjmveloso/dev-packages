@@ -1,4 +1,4 @@
-echo "Updating packages list ...\r\n"
+echo "Updating packages list..."
 
 echo "brew"
 brew list > packages/brew.txt
@@ -9,11 +9,15 @@ echo "pip"
 pip3 list --format columns > packages/pip.txt
 echo "gems"
 gem list > packages/gems.txt
-echo "\r\nCopying global .gitignore ..."
+echo "
+
+Copying global .gitignore ..."
 cp ~/.gitignore dotfiles/.gitignore
 echo "Copying global .gitconfig ..."
 cp ~/.gitconfig dotfiles/.gitconfig
 echo "Copying VSCode extensions ..."
 code --list-extensions > packages/vscode.txt
-echo "Copying global .zshrc ..."
-cp ~/.zshrc dotfiles/.zshrc
+echo "Copying global init.fish ..."
+cp ~/.local/share/omf/init.fish dotfiles/init.fish
+echo "Copying oh-my-fish plugins"
+omf list > packages/omf.txt

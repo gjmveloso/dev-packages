@@ -10,6 +10,7 @@ curl
 dtrx
 eksctl
 eksctl-aws-iam-authenticator
+fish
 gdbm
 gettext
 git
@@ -50,10 +51,6 @@ unrar
 watchman
 xz
 zeromq
-zsh
-zsh-completions
-zsh-history-substring-search
-zsh-syntax-highlighting
 corretto
 dbeaver-community
 docker
