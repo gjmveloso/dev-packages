@@ -1,6 +1,7 @@
 [4mPlugins[30m(B[m
-config		node		osx		python		spark
-fish-spec	omf		pyenv		rustup		weather
+aws		node		pyenv		spark
+config		omf		python		weather
+fish-spec	osx		rustup
 
 [4mThemes[30m(B[m
 default
