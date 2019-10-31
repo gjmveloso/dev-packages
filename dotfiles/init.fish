@@ -75,6 +75,11 @@ function backup-email
 
   bzip "Local Archive.mbox.tbz" *.mbox
   bzip "MailData.tbz" MailData/ MailPreferences/
+
+  rm -rf MailData/ 
+  rm -rf MailPreferences/
+
+  rm -rf *.mbox
 end
 
 emit perf:timer:start "Oh My Fish init user config path"
