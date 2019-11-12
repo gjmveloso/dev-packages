@@ -42,6 +42,7 @@ pyenv-virtualenv
 python
 rbenv
 readline
+restic
 ruby
 ruby-build
 rustup-init
