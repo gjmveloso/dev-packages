@@ -66,22 +66,6 @@ alias myip-all="curl ifconfig.me/all"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 
-function backup-email
-  mkdir MailData
-  mkdir -p MailPreferences
-  cp -Rf ~/Library/Mail/V7/MailData/Signatures/ ./MailData/Signatures
-  cp ~/Library/Mail/V7/MailData/SmartMailboxesLocalProperties.plist ./MailData/SmartMailboxesLocalProperties.plist
-  cp ~/Library/Preferences/com.apple.mail.plist ./MailPreferences/com.apple.mail.plist
-
-  bzip "Local Archive.mbox.tbz" *.mbox
-  bzip "MailData.tbz" MailData/ MailPreferences/
-
-  rm -rf MailData/ 
-  rm -rf MailPreferences/
-
-  rm -rf *.mbox
-end
-
 emit perf:timer:start "Oh My Fish init user config path"
 require --no-bundle --path $OMF_CONFIG
 emit perf:timer:finish "Oh My Fish init user config path"
