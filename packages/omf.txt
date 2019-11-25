@@ -1,6 +1,6 @@
 [4mPlugins[30m(B[m
-aws		fish-spec	omf		pyenv		rustup
-config		node		osx		python
+aws		node		osx		python		rustup
+fish-spec	omf		pyenv		rbenv
 
 [4mThemes[30m(B[m
 default
