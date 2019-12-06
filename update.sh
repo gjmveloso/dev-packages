@@ -17,7 +17,5 @@ echo "Copying global .gitconfig ..."
 cp ~/.gitconfig dotfiles/.gitconfig
 echo "Copying VSCode extensions ..."
 code --list-extensions > packages/vscode.txt
-echo "Copying global init.fish ..."
-cp ~/.local/share/omf/init.fish dotfiles/init.fish
-echo "Copying oh-my-fish plugins"
-omf list > packages/omf.txt
+echo "Copying global .zshrc ..."
+cp ~/.zshrc dotfiles/.zshrc
