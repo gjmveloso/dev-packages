@@ -58,17 +58,19 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-source $ZSH/oh-my-zsh.sh
 
-plugins=(osx git aws npm docker kubectl vscode zsh-completions history-substring-search)
+plugins=(osx git aws npm docker kubectl vscode history-substring-search)
+
+source $ZSH/oh-my-zsh.sh
 
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
+fpath=(/usr/local/etc/bash_completion.d $fpath)
+fpath=(/usr/local/share/bash-completion/completions $fpath)
 fpath=(/usr/local/share/zsh-completions $fpath)
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
+fpath=(/usr/local/share/zsh/site-functions $fpath)
 
 # User configuration
 
@@ -120,8 +122,7 @@ alias myip-all="curl ifconfig.me/all"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 
-TRAPWINCH() {
-  zle && { zle reset-prompt; zle -R }
-}
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
 
 autoload -U compinit && compinit

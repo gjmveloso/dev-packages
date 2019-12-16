@@ -1,5 +1,12 @@
+amazon/amazon
+homebrew/cask
+homebrew/cask-fonts
+homebrew/core
+pachyderm/tap
+weaveworks/tap
 amazon-ecs-cli
 autoconf
+aws-elasticbeanstalk
 aws-iam-authenticator
 awscli
 cfn-lint
@@ -25,6 +32,7 @@ node
 oniguruma
 openssl@1.1
 p7zip
+pachctl@1.9
 pcre
 pcre2
 pkg-config

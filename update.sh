@@ -1,7 +1,8 @@
 echo "Updating packages list..."
 
 echo "brew"
-brew list > packages/brew.txt
+brew tap > packages/brew.txt
+brew list >> packages/brew.txt
 brew cask list >> packages/brew.txt
 echo "npm"
 npm list -g --depth=0 > packages/npm.txt
