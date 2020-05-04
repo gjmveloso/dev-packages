@@ -13,7 +13,10 @@ export PATH=$HOME/.toolbox/bin:$PATH
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+
+DEFAULT_USER=velosog
+SHELL=/usr/local/bin/zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -58,7 +61,6 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-
 plugins=(osx git aws npm docker kubectl vscode history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
@@ -67,10 +69,11 @@ export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
 
-fpath=(/usr/local/etc/bash_completion.d $fpath)
-fpath=(/usr/local/share/bash-completion/completions $fpath)
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=(/usr/local/share/zsh/site-functions $fpath)
+
+fpath=(/usr/local/etc/bash_completion.d $fpath)
+fpath=(/usr/local/share/bash-completion/completions $fpath)
 
 # User configuration
 
@@ -125,4 +128,7 @@ alias gzip="gtar -zcvf"
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
 
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
 autoload -U compinit && compinit
+
