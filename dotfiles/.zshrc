@@ -1,9 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
-
+export JAVA_HOME=$(/usr/libexec/java_home)
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -124,11 +125,17 @@ alias myip="curl ifconfig.me"
 alias myip-all="curl ifconfig.me/all"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
+alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Office/Outlook/Outlook\ 15\ Profiles/Main\ Profile/Data"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
-autoload -U compinit && compinit
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+fi
 
