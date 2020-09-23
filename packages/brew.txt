@@ -3,6 +3,7 @@ aws/tap
 homebrew/cask
 homebrew/cask-fonts
 homebrew/core
+homebrew/services
 instrumenta/instrumenta
 weaveworks/tap
 amazon-ecs-cli
@@ -22,6 +23,7 @@ gettext
 git
 git-secrets
 gnu-tar
+go
 hadolint
 helm
 hugo
@@ -66,6 +68,7 @@ corretto
 dbeaver-community
 docker
 dotnet-sdk
+firefox
 font-fira-code
 iterm2
 obs

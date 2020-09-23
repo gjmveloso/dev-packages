@@ -3,7 +3,7 @@ echo "Updating packages list..."
 echo "brew"
 brew tap > packages/brew.txt
 brew list >> packages/brew.txt
-brew cask list >> packages/brew.txt
+brew list --cask >> packages/brew.txt
 echo "npm"
 npm list -g --depth=0 > packages/npm.txt
 echo "pip"
