@@ -1,11 +1,9 @@
 /usr/local/lib
-├── @aws-amplify/cli@3.17.0
-├── aws-cdk@1.63.0
-├── eslint@6.8.0
+├── @aws-amplify/cli@4.32.1
+├── aws-cdk@1.73.0
+├── eslint@7.13.0
 ├── gulp@4.0.2
-├── newman@4.6.1
-├── npm@6.14.8
+├── npm@7.0.10
 ├── parcel-bundler@1.12.4
-├── serverless@1.83.0
-└── typescript@3.9.7
+└── typescript@4.0.5
 

@@ -1,6 +1,5 @@
 amazonwebservices.aws-toolkit-vscode
 asciidoctor.asciidoctor-vscode
-aws-scripting-guy.cform
 ban.spellright
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
@@ -8,21 +7,17 @@ eamodio.gitlens
 esbenp.prettier-vscode
 exiasr.hadolint
 golang.go
-joaompinto.asciidoctor-vscode
-kddejong.vscode-cfn-lint
 ms-azuretools.vscode-docker
 ms-dotnettools.csharp
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
+ms-toolsai.jupyter
 ms-vscode.cpptools
-ms-vscode.powershell
 ms-vscode.vscode-typescript-tslint-plugin
-rebornix.ruby
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
 rust-lang.rust
-skyapps.fish-vscode
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency
@@ -30,4 +25,3 @@ vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 vscode-icons-team.vscode-icons
-wingrunr21.vscode-ruby

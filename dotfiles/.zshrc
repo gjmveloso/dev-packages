@@ -5,6 +5,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export GOPROXY="direct"
+export GO111MODULE="on"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -121,8 +123,8 @@ HISTFILE=~/.history
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias atom="code"
-alias myip="curl ifconfig.me"
-alias myip-all="curl ifconfig.me/all"
+alias myip="curl ifconfig.co"
+alias myip-json="curl ifconfig.co/json|jq"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Office/Outlook/Outlook\ 15\ Profiles/Main\ Profile/Data"

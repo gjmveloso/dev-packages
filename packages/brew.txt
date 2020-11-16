@@ -4,7 +4,6 @@ homebrew/cask
 homebrew/cask-fonts
 homebrew/core
 homebrew/services
-instrumenta/instrumenta
 weaveworks/tap
 amazon-ecs-cli
 autoconf
@@ -13,7 +12,7 @@ aws-iam-authenticator
 aws-sam-cli
 awscli
 cfn-lint
-conftest
+cloudformation-guard
 copilot-cli
 curl
 dtrx
@@ -26,15 +25,17 @@ gnu-tar
 go
 hadolint
 helm
+hey
 hugo
 icu4c
 ipython
 jq
 k6
+krb5
 kubernetes-cli
+libpq
 libssh2
 libyaml
-maven
 media-info
 mtr
 ncurses
@@ -48,8 +49,8 @@ pcre2
 pipenv
 pkg-config
 pyenv
-python@3.7
 python@3.8
+python@3.9
 rbenv
 readline
 ruby
@@ -73,5 +74,4 @@ font-fira-code
 iterm2
 obs
 postman
-powershell
 vlc
