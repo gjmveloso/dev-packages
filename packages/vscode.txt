@@ -7,6 +7,7 @@ eamodio.gitlens
 esbenp.prettier-vscode
 exiasr.hadolint
 golang.go
+kddejong.vscode-cfn-lint
 ms-azuretools.vscode-docker
 ms-dotnettools.csharp
 ms-kubernetes-tools.vscode-kubernetes-tools

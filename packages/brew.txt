@@ -28,13 +28,9 @@ helm
 hey
 hugo
 icu4c
-ipython
 jq
 k6
-krb5
 kubernetes-cli
-libpq
-libssh2
 libyaml
 media-info
 mtr
@@ -55,12 +51,9 @@ rbenv
 readline
 ruby
 ruby-build
-rust
 sqlite
 unrar
-utf8proc
 xz
-zeromq
 zsh
 zsh-completions
 zsh-history-substring-search
