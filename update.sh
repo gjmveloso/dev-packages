@@ -20,3 +20,5 @@ echo "Copying VSCode extensions ..."
 code --list-extensions > packages/vscode.txt
 echo "Copying global .zshrc ..."
 cp ~/.zshrc dotfiles/.zshrc
+echo "Copying global .p10k ..."
+cp ~/.p10k.zsh dotfiles/.p10k.zsh

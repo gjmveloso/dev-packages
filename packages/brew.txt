@@ -4,6 +4,7 @@ homebrew/cask
 homebrew/cask-fonts
 homebrew/core
 homebrew/services
+romkatv/powerlevel10k
 weaveworks/tap
 amazon-ecs-cli
 autoconf
@@ -31,6 +32,8 @@ icu4c
 jq
 k6
 kubernetes-cli
+libidn2
+libunistring
 libyaml
 media-info
 mtr
@@ -44,6 +47,7 @@ pcre
 pcre2
 pipenv
 pkg-config
+powerlevel10k
 pyenv
 python@3.8
 python@3.9
@@ -53,6 +57,7 @@ ruby
 ruby-build
 sqlite
 unrar
+wget
 xz
 zsh
 zsh-completions
