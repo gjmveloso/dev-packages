@@ -1,3 +1,7 @@
+export SHELL=/usr/local/bin/zsh
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export PATH=/usr/local/opt/ruby/bin:$PATH
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -6,12 +10,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-export PATH=/usr/local/opt/ruby/bin:$PATH
+
 export JAVA_HOME=$(/usr/libexec/java_home)
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export GOPROXY="direct"
 export GO111MODULE="on"
 
@@ -19,13 +21,6 @@ export GO111MODULE="on"
 export ZSH=~/.oh-my-zsh
 
 export PATH=$HOME/.toolbox/bin:$PATH
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-
-DEFAULT_USER=velosog
-SHELL=/usr/local/bin/zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -77,6 +72,7 @@ source $ZSH/oh-my-zsh.sh
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 fpath=(/usr/local/share/zsh/site-functions $fpath)

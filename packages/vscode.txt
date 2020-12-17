@@ -18,11 +18,11 @@ ms-vscode.vscode-typescript-tslint-plugin
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
-rust-lang.rust
-VisualStudioExptTeam.vscodeintellicode
+TabNine.tabnine-vscode
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency
 vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 vscode-icons-team.vscode-icons
+zhuangtongfa.material-theme
