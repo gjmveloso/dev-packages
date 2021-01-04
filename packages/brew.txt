@@ -1,4 +1,5 @@
 amazon/amazon
+aquasecurity/trivy
 aws/tap
 homebrew/cask
 homebrew/cask-fonts
@@ -7,6 +8,7 @@ homebrew/services
 romkatv/powerlevel10k
 weaveworks/tap
 amazon-ecs-cli
+aquasecurity/trivy/trivy
 aws-elasticbeanstalk
 aws/tap/aws-sam-cli
 aws/tap/copilot-cli
@@ -42,6 +44,7 @@ dotnet-sdk
 firefox
 font-fira-code
 iterm2
+keepingyouawake
 obs
 postman
 vlc
