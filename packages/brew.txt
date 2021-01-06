@@ -45,6 +45,7 @@ firefox
 font-fira-code
 iterm2
 keepingyouawake
+nosql-workbench
 obs
 postman
 vlc
