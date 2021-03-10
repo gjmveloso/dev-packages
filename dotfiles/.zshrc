@@ -125,11 +125,12 @@ HISTFILE=~/.history
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias atom="code"
-alias myip="curl ifconfig.co"
-alias myip-json="curl ifconfig.co/json|jq"
+alias myip="curl ipinfo.io | jq .ip"
+alias myip-json="curl ipinfo.io | jq"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Office/Outlook/Outlook\ 15\ Profiles/Main\ Profile/Data"
+alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
