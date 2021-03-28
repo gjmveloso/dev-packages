@@ -9,7 +9,7 @@ brew list --cask >> packages/brew.txt
 echo "npm"
 npm list -g --depth=0 > packages/npm.txt
 echo "pip"
-pip list --format columns > packages/pip.txt
+pip3 list --format columns > packages/pip.txt
 echo "gems"
 gem list > packages/gems.txt
 echo "
@@ -20,6 +20,8 @@ echo "Copying global .gitconfig ..."
 cp ~/.gitconfig dotfiles/.gitconfig
 echo "Copying VSCode extensions ..."
 code --list-extensions > packages/vscode.txt
+echo "Copying VSCode settings ..."
+cp ~/Library/Application\ Support\/Code/User/settings.json packages/vscode.settings.json
 echo "Copying global .zshrc ..."
 cp ~/.zshrc dotfiles/.zshrc
 echo "Copying global .p10k ..."

@@ -1,0 +1,73 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.pythonPath": "/usr/local/bin/python3",
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.languageServer": "Pylance",
+    "editor.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "workbench.startupEditor": "newUntitledFile",
+    "aws.onDefaultRegionMissing": "add",
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.lineHeight": 4,
+    "git.confirmSync": false,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 14,
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "yaml.validate": false,
+    "ruby.useBundler": true, //run non-lint commands with bundle exec
+    "ruby.useLanguageServer": true, // use the internal language server (see below)
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": true // enable rubocop via bundler
+        },
+        "reek": {
+            "useBundler": true // enable reek via bundler
+        }
+    },
+    "ruby.format": "rubocop",
+    "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "window.newWindowDimensions": "maximized",
+    "editor.fontLigatures": true,
+    "workbench.enableExperiments": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
+}

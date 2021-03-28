@@ -19,6 +19,7 @@ ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-vscode.cpptools
 ms-vscode.vscode-typescript-tslint-plugin
+rebornix.ruby
 redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
@@ -28,4 +29,5 @@ vscjava.vscode-java-pack
 vscjava.vscode-java-test
 vscjava.vscode-maven
 vscode-icons-team.vscode-icons
+wingrunr21.vscode-ruby
 zhuangtongfa.material-theme
