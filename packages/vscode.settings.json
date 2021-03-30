@@ -17,7 +17,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "aws.onDefaultRegionMissing": "add",
     "vsicons.dontShowNewVersionMessage": true,
-    "terminal.integrated.lineHeight": 4,
     "git.confirmSync": false,
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontSize": 14,
@@ -69,5 +68,7 @@
     "editor.fontLigatures": true,
     "workbench.enableExperiments": false,
     "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false
+    "telemetry.enableTelemetry": false,
+    "editor.inlineHints.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
+    "debug.console.fontSize": 14,
 }

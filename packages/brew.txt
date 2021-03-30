@@ -9,13 +9,11 @@ homebrew/services
 romkatv/powerlevel10k
 weaveworks/tap
 amazon/amazon/isengard-cli
-aquasecurity/trivy/trivy
 aws-elasticbeanstalk
 aws/tap/aws-sam-cli
 aws/tap/copilot-cli
 cfn-lint
 cloudformation-guard
-coreutils
 curl
 docker-completion
 git
@@ -51,10 +49,10 @@ dotnet-sdk
 drawio
 flux
 font-fira-code
+insomnia
 keepingyouawake
 kite
 nosql-workbench
 obs
 pallotron-yubiswitch
-postman
 vlc
