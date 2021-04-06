@@ -1,5 +1,6 @@
 export SHELL=/usr/local/bin/zsh
 export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export PATH=/usr/local/opt/openssl@1.1/bin:$PATH
 export PATH=/usr/local/opt/ruby/bin:$PATH
 export PATH=/usr/local/opt/curl/bin:$PATH
 
@@ -20,6 +21,9 @@ export HOMEBREW_EDITOR=code
 export GOPROXY="direct"
 export GO111MODULE="on"
 
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
 export CPPFLAGS="-I/usr/local/opt/ruby/include"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
@@ -42,6 +46,9 @@ if type brew &>/dev/null; then
   autoload -Uz compinit && compinit
   autoload -Uz bashcompinit && bashcompinit
 fi
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
 
 plugins=(osx git aws npm docker kubectl vscode history-substring-search)
 
@@ -98,9 +105,6 @@ alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Office/Outlook/Outlook\ 15\ Profiles/Main\ Profile/Data"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 

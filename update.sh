@@ -24,5 +24,7 @@ echo "Copying VSCode settings ..."
 cp ~/Library/Application\ Support\/Code/User/settings.json packages/vscode.settings.json
 echo "Copying global .zshrc ..."
 cp ~/.zshrc dotfiles/.zshrc
+echo "Copying global .bashrc ..."
+cp ~/.bashrc dotfiles/.bashrc
 echo "Copying global .p10k ..."
 cp ~/.p10k.zsh dotfiles/.p10k.zsh
