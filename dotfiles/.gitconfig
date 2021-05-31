@@ -3,3 +3,5 @@
 	name = Gustavo Veloso
 [core]
 	editor = code --wait
+[init]
+	defaultBranch = main

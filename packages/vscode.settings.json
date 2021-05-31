@@ -75,4 +75,39 @@
     "window.restoreWindows": "folders",
     "window.openWithoutArgumentsInNewWindow": "on",
     "aws.telemetry": false,
+    "aws.profile": "profile:default",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "explorer.confirmDelete": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "redhat.telemetry.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.showStartPage": false,
+    "write-good.languages": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellright.language": [
+    "en-US",
+    "es-CL",
+    "pt-BR"
+    ],
 }
