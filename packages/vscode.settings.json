@@ -1,113 +1,112 @@
 {
-    "workbench.colorTheme": "One Dark Pro",
-    "workbench.iconTheme": "vscode-icons",
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
-    "python.pythonPath": "/usr/local/bin/python3",
-    "kite.showWelcomeNotificationOnStartup": false,
-    "python.languageServer": "Pylance",
-    "editor.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
-    "editor.fontSize": 14,
-    "aws.onDefaultRegionMissing": "add",
-    "vsicons.dontShowNewVersionMessage": true,
-    "git.confirmSync": false,
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.fontSize": 14,
-    "yaml.customTags": [
-        "!And",
-        "!And sequence",
-        "!If",
-        "!If sequence",
-        "!Not",
-        "!Not sequence",
-        "!Equals",
-        "!Equals sequence",
-        "!Or",
-        "!Or sequence",
-        "!FindInMap",
-        "!FindInMap sequence",
-        "!Base64",
-        "!Join",
-        "!Join sequence",
-        "!Cidr",
-        "!Ref",
-        "!Sub",
-        "!Sub sequence",
-        "!GetAtt",
-        "!GetAZs",
-        "!ImportValue",
-        "!ImportValue sequence",
-        "!Select",
-        "!Select sequence",
-        "!Split",
-        "!Split sequence"
-    ],
-    "yaml.validate": false,
-    "ruby.useBundler": true, //run non-lint commands with bundle exec
-    "ruby.useLanguageServer": true, // use the internal language server (see below)
-    "ruby.lint": {
-        "rubocop": {
-            "useBundler": true // enable rubocop via bundler
-        },
-        "reek": {
-            "useBundler": true // enable reek via bundler
-        }
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.suggestSelection": "first",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "python.pythonPath": "/usr/local/bin/python3",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "python.languageServer": "Pylance",
+  "editor.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "aws.onDefaultRegionMissing": "add",
+  "vsicons.dontShowNewVersionMessage": true,
+  "git.confirmSync": false,
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "yaml.validate": false,
+  "ruby.useBundler": true, //run non-lint commands with bundle exec
+  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true // enable rubocop via bundler
     },
-    "ruby.format": "rubocop",
-    "[jsonc]": {
+    "reek": {
+      "useBundler": true // enable reek via bundler
+    }
+  },
+  "ruby.format": "rubocop",
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.newWindowDimensions": "maximized",
-    "editor.fontLigatures": true,
-    "workbench.enableExperiments": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "editor.inlineHints.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
-    "debug.console.fontSize": 14,
-    "window.openFilesInNewWindow": "default",
-    "workbench.settings.enableNaturalLanguageSearch": false,
-    "window.restoreWindows": "folders",
-    "window.openWithoutArgumentsInNewWindow": "on",
-    "aws.telemetry": false,
-    "aws.profile": "profile:default",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "explorer.confirmDelete": false,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "redhat.telemetry.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "go.toolsManagement.autoUpdate": true,
-    "workbench.editor.untitled.hint": "hidden",
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "python.showStartPage": false,
-    "write-good.languages": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ],
-    "spellright.documentTypes": [
-        "markdown",
-        "latex",
-        "plaintext"
-    ],
-    "spellright.language": [
-    "en-US",
-    "es-CL",
-    "pt-BR"
-    ],
+  },
+  "window.newWindowDimensions": "maximized",
+  "editor.fontLigatures": true,
+  "workbench.enableExperiments": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "debug.console.fontSize": 14,
+  "window.openFilesInNewWindow": "default",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "window.restoreWindows": "folders",
+  "window.openWithoutArgumentsInNewWindow": "on",
+  "aws.telemetry": false,
+  "aws.profile": "profile:default",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "explorer.confirmDelete": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.showStartPage": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "write-good.only-lint-on-save": true,
+  "write-good.languages": ["markdown", "plaintext"],
+  "spellright.documentTypes": ["markdown", "latex", "plaintext"],
+  "spellright.language": ["en"],
+  "gopls": {
+    "build.experimentalWorkspaceModule": true,
+    "build.expandWorkspaceToModule": true
+  },
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
 }

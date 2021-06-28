@@ -7,42 +7,44 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 
-export SHELL=/usr/local/bin/zsh
-export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
-export PATH=/usr/local/opt/openssl@1.1/bin:$PATH
-export PATH=/usr/local/opt/ruby/bin:$PATH
-export PATH=/usr/local/opt/curl/bin:$PATH
+export SHELL="/usr/local/bin/zsh"
+export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
-
-export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
-export PATH=$HOME/.toolbox/bin:$PATH
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
+
+export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
+export PATH=$HOME/.toolbox/bin:$PATH
+
 export GOPROXY="direct"
 export GO111MODULE="on"
 
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
-export LDFLAGS="-L/usr/local/opt/ruby/lib"
-export CPPFLAGS="-I/usr/local/opt/ruby/include"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export LDFLAGS="-L/usr/local/opt/sqlite/lib"
-export CPPFLAGS="-I/usr/local/opt/sqlite/include"
-export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig"
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
-eval "$(pyenv init -)"
-if which pyenv-virtualenv-init > /dev/null; then 
-  eval "$(pyenv virtualenv-init -)"; 
-fi
+export LDFLAGS="-L/usr/local/opt/ruby/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/ruby/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/curl/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/curl/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/sqlite/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/node@14/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/node@14/include:$CPPFLAGS"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
