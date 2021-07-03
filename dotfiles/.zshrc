@@ -11,9 +11,11 @@ export SHELL="/usr/local/bin/zsh"
 export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
-export PATH="/usr/local/opt/curl/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+export DOTNET_ROOT="/usr/local/opt/dotnet/libexec"
+export DOTNET_CLI_TELEMETRY_OPTOUT="true"
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
@@ -37,10 +39,6 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 export LDFLAGS="-L/usr/local/opt/ruby/lib:$LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/ruby/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/curl/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/curl/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/sqlite/lib:$LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
 export LDFLAGS="-L/usr/local/opt/node@14/lib:$LDFLAGS"
