@@ -14,17 +14,14 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export DOTNET_ROOT="/usr/local/opt/dotnet/libexec"
-export DOTNET_CLI_TELEMETRY_OPTOUT="true"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+export SAM_CLI_TELEMETRY=0
 
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-export NVM_DIR="$HOME/.nvm"
+export PATH="/usr/local/opt/node/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
 export PATH=$HOME/.toolbox/bin:$PATH
@@ -41,8 +38,8 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/node@14/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/node@14/include:$CPPFLAGS"
+export LDFLAGS="-L/usr/local/opt/node/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/node/include:$CPPFLAGS"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -59,7 +56,7 @@ fi
 
 test -r "/usr/local/etc/profile.d/bash_completion.sh" && source "/usr/local/etc/profile.d/bash_completion.sh"
 
-plugins=(osx git aws npm docker kubectl vscode history-substring-search)
+plugins=(osx git aws npm docker kubectl vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,6 +105,7 @@ HISTFILE=~/.history
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias atom="code"
+alias docker="podman"
 alias myip="curl ipinfo.io | jq .ip"
 alias myip-json="curl ipinfo.io | jq"
 alias bzip="gtar -jcvf"
@@ -116,10 +114,12 @@ alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Offic
 alias firefox-backup="bzip firefox.tbz ~/Library/Application\ Support/Firefox/Profiles"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh 
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 

@@ -68,7 +68,7 @@
   "window.restoreWindows": "folders",
   "window.openWithoutArgumentsInNewWindow": "on",
   "aws.telemetry": false,
-  "aws.profile": "profile:default",
+  "aws.profile": "profile:velosog-AdminRole",
   "diffEditor.ignoreTrimWhitespace": false,
   "explorer.confirmDelete": false,
   "[typescript]": {
@@ -112,5 +112,15 @@
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "yaml.schemas": {},
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 }
