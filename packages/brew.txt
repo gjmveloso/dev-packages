@@ -23,7 +23,7 @@ cfn-lint
 cloud-nuke
 cloudformation-guard
 detect-secrets
-docker-completion
+docker-credential-helper
 git
 git-secrets
 gitleaks
