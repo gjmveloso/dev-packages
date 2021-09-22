@@ -23,6 +23,7 @@ cfn-lint
 cloud-nuke
 cloudformation-guard
 detect-secrets
+docker-completion
 docker-credential-helper
 git
 git-secrets
@@ -69,9 +70,11 @@ corretto11
 dbeaver-community
 dotnet-sdk
 drawio
+firefox
 flux
 font-fira-code
 insomnia
+iterm2
 keepingyouawake
 kite
 maccy

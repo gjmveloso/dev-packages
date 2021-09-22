@@ -19,6 +19,7 @@ foxundermoon.shell-format
 GitHub.remotehub
 golang.go
 kddejong.vscode-cfn-lint
+kiteco.kite
 ms-azuretools.vscode-docker
 ms-dotnettools.csharp
 ms-kubernetes-tools.vscode-kubernetes-tools
