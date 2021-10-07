@@ -40,6 +40,7 @@ hugo
 hunspell
 jq
 k6
+kubectx
 libgcrypt
 libmaxminddb
 libmetalink

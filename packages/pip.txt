@@ -3,12 +3,12 @@ Package               Version
 arrow                 1.1.1
 attrs                 21.2.0
 autopep8              1.5.7
-aws-lambda-builders   1.6.0
-aws-sam-cli           1.31.0
+aws-lambda-builders   1.7.0
+aws-sam-cli           1.32.0
 aws-sam-translator    1.38.0
 binaryornot           0.4.4
-boto3                 1.18.44
-botocore              1.21.44
+boto3                 1.18.50
+botocore              1.21.50
 certifi               2021.5.30
 chardet               4.0.0
 charset-normalizer    2.0.4
