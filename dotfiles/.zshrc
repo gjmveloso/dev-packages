@@ -56,7 +56,7 @@ fi
 
 test -r "/usr/local/etc/profile.d/bash_completion.sh" && source "/usr/local/etc/profile.d/bash_completion.sh"
 
-plugins=(osx git aws npm docker kubectl vscode)
+plugins=(macos git aws npm docker kubectl vscode)
 
 source $ZSH/oh-my-zsh.sh
 

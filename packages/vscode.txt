@@ -19,7 +19,6 @@ foxundermoon.shell-format
 GitHub.remotehub
 golang.go
 kddejong.vscode-cfn-lint
-kiteco.kite
 ms-azuretools.vscode-docker
 ms-dotnettools.csharp
 ms-kubernetes-tools.vscode-kubernetes-tools
@@ -27,6 +26,7 @@ ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
@@ -39,6 +39,7 @@ redhat.java
 redhat.vscode-commons
 redhat.vscode-xml
 redhat.vscode-yaml
+TabNine.tabnine-vscode
 travisthetechie.write-good-linter
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency

@@ -72,7 +72,7 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "explorer.confirmDelete": false,
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "redhat.telemetry.enabled": false,
   "explorer.confirmDragAndDrop": false,
@@ -122,5 +122,13 @@
   "yaml.schemas": {},
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.schemas": [],
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
   },
 }
