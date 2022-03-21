@@ -1,3 +1,4 @@
+adpyke.vscode-sql-formatter
 amazonwebservices.aws-toolkit-vscode
 asciidoctor.asciidoctor-vscode
 ban.spellright
@@ -16,6 +17,7 @@ eg2.vscode-npm-script
 esbenp.prettier-vscode
 exiasr.hadolint
 foxundermoon.shell-format
+GitHub.copilot
 GitHub.remotehub
 golang.go
 kddejong.vscode-cfn-lint
@@ -39,7 +41,6 @@ redhat.java
 redhat.vscode-commons
 redhat.vscode-xml
 redhat.vscode-yaml
-TabNine.tabnine-vscode
 travisthetechie.write-good-linter
 vscjava.vscode-java-debug
 vscjava.vscode-java-dependency

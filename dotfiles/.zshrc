@@ -21,13 +21,17 @@ export SAM_CLI_TELEMETRY=0
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
-export PATH="/usr/local/opt/node/bin:$PATH"
+export PATH="/usr/local/opt/node@16/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
 export PATH=$HOME/.toolbox/bin:$PATH
 
 export GOPROXY="direct"
 export GO111MODULE="on"
+
+export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
+
+export KUBE_EDITOR='code --wait'
 
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib:$LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include:$CPPFLAGS"
@@ -38,8 +42,8 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/node/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/node/include:$CPPFLAGS"
+export LDFLAGS="-L/usr/local/opt/node@16/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/node@16/include:$CPPFLAGS"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -47,7 +51,6 @@ export ZSH=~/.oh-my-zsh
 if type brew &>/dev/null; then
   FPATH=/usr/local/share/zsh/site-functions:$FPATH
   FPATH=/usr/local/share/zsh-completions:$FPATH
-  FPATH=/usr/local/share/zsh/site-functions:$FPATH
   FPATH=/usr/local/etc/bash_completion.d:$FPATH
   FPATH=/usr/local/share/bash-completion/completions:$FPATH
   autoload -Uz compinit && compinit
@@ -105,7 +108,6 @@ HISTFILE=~/.history
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias atom="code"
-alias docker="podman"
 alias myip="curl ipinfo.io | jq .ip"
 alias myip-json="curl ipinfo.io | jq"
 alias bzip="gtar -jcvf"
@@ -127,3 +129,5 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
+eval "$(pyenv init -)"
+export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"

@@ -12,7 +12,6 @@ homebrew/cask-versions
 homebrew/core
 homebrew/services
 romkatv/powerlevel10k
-turbot/tap
 weaveworks/tap
 amazon/amazon/isengard-cli
 anchore/grype/grype
@@ -22,11 +21,10 @@ aws-elasticbeanstalk
 aws/tap/aws-sam-cli
 aws/tap/k8s-tools
 bash-completion
+bat
 cfn-lint
-cloud-nuke
 cloudformation-guard
 detect-secrets
-docker-completion
 docker-credential-helper
 fluxcd/tap/flux
 git
@@ -53,18 +51,18 @@ libssh2
 lua
 media-info
 mtr
+node@16
 openldap
 openshift-cli
 pipenv
-podman
+pyenv
 romkatv/powerlevel10k/powerlevel10k
-rosa-cli
 rtmpdump
 ruby
 ruby-build
-turbot/tap/steampipe
 utf8proc
 weaveworks/tap/eksctl
+zsh
 zsh-completions
 zsh-history-substring-search
 zsh-syntax-highlighting
@@ -76,6 +74,7 @@ brave-browser
 charles
 corretto11
 dbeaver-community
+docker
 dotnet-sdk
 drawio
 firefox
@@ -96,3 +95,4 @@ spotify
 tunnelblick
 visual-studio-code
 vlc
+wireshark

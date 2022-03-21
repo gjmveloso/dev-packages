@@ -6,7 +6,6 @@
     "*.ipynb": "jupyter-notebook"
   },
   "python.pythonPath": "/usr/local/bin/python3",
-  "kite.showWelcomeNotificationOnStartup": false,
   "python.languageServer": "Pylance",
   "editor.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
@@ -60,15 +59,13 @@
   "window.newWindowDimensions": "maximized",
   "editor.fontLigatures": true,
   "workbench.enableExperiments": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "debug.console.fontSize": 14,
   "window.openFilesInNewWindow": "default",
   "workbench.settings.enableNaturalLanguageSearch": false,
   "window.restoreWindows": "folders",
   "window.openWithoutArgumentsInNewWindow": "on",
   "aws.telemetry": false,
-  "aws.profile": "profile:velosog-AdminRole",
   "diffEditor.ignoreTrimWhitespace": false,
   "explorer.confirmDelete": false,
   "[typescript]": {
@@ -87,14 +84,12 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.showStartPage": false,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "write-good.only-lint-on-save": true,
   "write-good.languages": ["markdown", "plaintext"],
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
-  "spellright.language": ["en"],
+  "spellright.language": ["en", "es", "pt"],
   "gopls": {
     "build.experimentalWorkspaceModule": true,
     "build.expandWorkspaceToModule": true
@@ -113,7 +108,6 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-  "tabnine.experimentalAutoImports": true,
   "files.watcherExclude": {
     "**/.bloop": true,
     "**/.metals": true,
@@ -121,7 +115,7 @@
   },
   "yaml.schemas": {},
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "json.schemas": [],
   "editor.inlineSuggest.enabled": true,
@@ -129,6 +123,7 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": true
+    "markdown": false
   },
+  "aws.profile": "profile:velosog-AdminRole",
 }
