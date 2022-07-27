@@ -1,7 +1,7 @@
 /usr/local/lib
-├── @aws-amplify/cli@7.6.19
-├── aws-cdk@2.12.0
-├── eslint@8.9.0
-├── npm@8.5.2
-└── typescript@4.5.5
+├── aws-cdk@2.33.0
+├── eslint@8.20.0
+├── npm-check-updates@16.0.1
+├── npm@8.15.0
+└── typescript@4.7.4
 

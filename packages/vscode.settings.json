@@ -79,7 +79,7 @@
   "go.toolsManagement.autoUpdate": true,
   "workbench.editor.untitled.hint": "hidden",
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -126,4 +126,9 @@
     "markdown": false
   },
   "aws.profile": "profile:velosog-AdminRole",
+  "cSpell.language": "en, pt, es",
+  "editor.suggest.showMethods": true,
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "top",
 }

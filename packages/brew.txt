@@ -27,6 +27,7 @@ cloudformation-guard
 detect-secrets
 docker-credential-helper
 fluxcd/tap/flux
+fzf
 git
 git-secrets
 gitleaks
@@ -43,6 +44,7 @@ hunspell
 jq
 k6
 kubectx
+kubie
 libgcrypt
 libmaxminddb
 libmetalink
@@ -74,6 +76,7 @@ brave-browser
 charles
 corretto11
 dbeaver-community
+displaylink
 docker
 dotnet-sdk
 drawio

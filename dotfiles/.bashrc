@@ -15,3 +15,5 @@ fi
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 eval "$(pyenv init -)"
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

@@ -131,3 +131,5 @@ source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 eval "$(pyenv init -)"
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
