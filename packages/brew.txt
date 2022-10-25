@@ -29,6 +29,7 @@ docker-credential-helper
 fluxcd/tap/flux
 fzf
 git
+git-remote-codecommit
 git-secrets
 gitleaks
 gnu-sed
@@ -62,7 +63,7 @@ romkatv/powerlevel10k/powerlevel10k
 rtmpdump
 ruby
 ruby-build
-utf8proc
+tmux
 weaveworks/tap/eksctl
 zsh
 zsh-completions

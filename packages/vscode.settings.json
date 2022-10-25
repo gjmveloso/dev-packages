@@ -125,7 +125,7 @@
     "plaintext": false,
     "markdown": false
   },
-  "aws.profile": "profile:velosog-AdminRole",
+  "aws.profile": "profile:default",
   "cSpell.language": "en, pt, es",
   "editor.suggest.showMethods": true,
   "editor.suggest.preview": true,
