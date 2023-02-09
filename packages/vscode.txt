@@ -22,6 +22,7 @@ kddejong.vscode-cfn-lint
 ms-azuretools.vscode-docker
 ms-dotnettools.csharp
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-python.isort
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -32,10 +33,11 @@ ms-toolsai.vscode-jupyter-slideshow
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
+ms-vscode.azure-repos
 ms-vscode.cpptools
+ms-vscode.remote-explorer
 ms-vscode.remote-repositories
 ms-vscode.vscode-typescript-tslint-plugin
-msjsdiag.vscode-react-native
 rebornix.ruby
 redhat.java
 redhat.vscode-commons

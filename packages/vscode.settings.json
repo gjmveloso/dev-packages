@@ -91,7 +91,6 @@
   "spellright.documentTypes": ["markdown", "latex", "plaintext"],
   "spellright.language": ["en", "es", "pt"],
   "gopls": {
-    "build.experimentalWorkspaceModule": true,
     "build.expandWorkspaceToModule": true
   },
   "terminal.external.osxExec": "iTerm.app",
@@ -113,22 +112,21 @@
     "**/.metals": true,
     "**/.ammonite": true
   },
-  "yaml.schemas": {},
+  "yaml.schemas": {
+  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
   "json.schemas": [],
   "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
-  },
-  "aws.profile": "profile:default",
-  "cSpell.language": "en, pt, es",
+  "cSpell.language": "en,pt,es",
   "editor.suggest.showMethods": true,
   "editor.suggest.preview": true,
   "editor.acceptSuggestionOnEnter": "on",
   "editor.snippetSuggestions": "top",
+  "editor.hover.enabled": true,
+  "go.delveConfig": {
+  
+  },
+  "react-native-tools.showUserTips": false,
 }

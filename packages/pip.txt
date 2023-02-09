@@ -1,6 +1,8 @@
-Package    Version
----------- -------
-pip        22.3
-PyYAML     6.0
-setuptools 65.5.0
-wheel      0.37.1
+Package           Version
+----------------- -------
+pip               23.0
+PyYAML            6.0
+setuptools        67.2.0
+six               1.16.0
+typing_extensions 4.4.0
+wheel             0.38.4

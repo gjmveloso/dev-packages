@@ -18,16 +18,17 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 export SAM_CLI_TELEMETRY=0
 
+export AWS_CLI_AUTO_PROMPT=on-partial
+
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
-export PATH="/usr/local/opt/node@16/bin:$PATH"
+export PATH="/usr/local/opt/node@18/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
 export PATH=$HOME/.toolbox/bin:$PATH
 
 export GOPROXY="direct"
-export GO111MODULE="on"
 
 export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
 
@@ -42,8 +43,8 @@ export CPPFLAGS="-I/usr/local/opt/ruby/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/node@16/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/node@16/include:$CPPFLAGS"
+export LDFLAGS="-L/usr/local/opt/node@18/lib:$LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/node@18/include:$CPPFLAGS"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh

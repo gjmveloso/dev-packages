@@ -1,4 +1,4 @@
-amazon/amazon
+amzn/amzn
 anchore/grype
 anchore/syft
 aquasecurity/trivy
@@ -13,7 +13,8 @@ homebrew/core
 homebrew/services
 romkatv/powerlevel10k
 weaveworks/tap
-amazon/amazon/isengard-cli
+amzn/amzn/env-improvement
+amzn/amzn/isengard-cli
 anchore/grype/grype
 anchore/syft/syft
 aquasecurity/trivy/trivy
@@ -24,7 +25,9 @@ bash-completion
 bat
 cfn-lint
 cloudformation-guard
+colima
 detect-secrets
+docker
 docker-credential-helper
 fluxcd/tap/flux
 fzf
@@ -32,7 +35,6 @@ git
 git-remote-codecommit
 git-secrets
 gitleaks
-gnu-sed
 gnu-tar
 go
 grep
@@ -42,8 +44,6 @@ hashicorp/tap/terraform
 hey
 hugo
 hunspell
-jq
-k6
 kubectx
 kubie
 libgcrypt
@@ -54,7 +54,7 @@ libssh2
 lua
 media-info
 mtr
-node@16
+node@18
 openldap
 openshift-cli
 pipenv
@@ -63,6 +63,7 @@ romkatv/powerlevel10k/powerlevel10k
 rtmpdump
 ruby
 ruby-build
+semgrep
 tmux
 weaveworks/tap/eksctl
 zsh
@@ -78,7 +79,6 @@ charles
 corretto11
 dbeaver-community
 displaylink
-docker
 dotnet-sdk
 drawio
 firefox
