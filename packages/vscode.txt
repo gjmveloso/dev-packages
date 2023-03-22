@@ -16,6 +16,7 @@ eg2.vscode-npm-script
 esbenp.prettier-vscode
 exiasr.hadolint
 foxundermoon.shell-format
+GitHub.github-vscode-theme
 GitHub.remotehub
 golang.go
 kddejong.vscode-cfn-lint

@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
   "workbench.iconTheme": "vscode-icons",
   "editor.suggestSelection": "first",
   "workbench.editorAssociations": {
@@ -7,7 +7,7 @@
   },
   "python.pythonPath": "/usr/local/bin/python3",
   "python.languageServer": "Pylance",
-  "editor.fontFamily": "'FiraCode-Retina', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'FiraCode', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
   "aws.onDefaultRegionMissing": "add",
   "vsicons.dontShowNewVersionMessage": true,
@@ -96,7 +96,7 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font Mono'",
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },

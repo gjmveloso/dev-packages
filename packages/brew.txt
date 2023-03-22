@@ -11,7 +11,6 @@ homebrew/cask-fonts
 homebrew/cask-versions
 homebrew/core
 homebrew/services
-romkatv/powerlevel10k
 weaveworks/tap
 amzn/amzn/env-improvement
 amzn/amzn/isengard-cli
@@ -57,13 +56,15 @@ mtr
 node@18
 openldap
 openshift-cli
+openssh
 pipenv
 pyenv
-romkatv/powerlevel10k/powerlevel10k
+python-tk@3.10
 rtmpdump
 ruby
 ruby-build
 semgrep
+starship
 tmux
 weaveworks/tap/eksctl
 zsh
@@ -76,7 +77,7 @@ appcleaner
 boop
 brave-browser
 charles
-corretto11
+corretto17
 dbeaver-community
 displaylink
 dotnet-sdk
@@ -84,6 +85,7 @@ drawio
 firefox
 flux
 font-fira-code
+font-fira-code-nerd-font
 insomnia
 iterm2
 keepingyouawake
