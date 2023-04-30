@@ -129,4 +129,12 @@
   
   },
   "react-native-tools.showUserTips": false,
+  "update.showReleaseNotes": false,
+  "git.openRepositoryInParentFolders": "always",
+  "remote.SSH.defaultExtensions": [
+    "amazonwebservices.aws-toolkit-vscode"
+  ],
+  "aws.suppressPrompts": {
+    "remoteConnected": true
+  },
 }

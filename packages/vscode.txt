@@ -19,6 +19,7 @@ foxundermoon.shell-format
 GitHub.github-vscode-theme
 GitHub.remotehub
 golang.go
+hashicorp.terraform
 kddejong.vscode-cfn-lint
 ms-azuretools.vscode-docker
 ms-dotnettools.csharp
@@ -57,4 +58,3 @@ vscode-icons-team.vscode-icons
 Vue.volar
 wingrunr21.vscode-ruby
 yzhang.markdown-all-in-one
-zhuangtongfa.material-theme

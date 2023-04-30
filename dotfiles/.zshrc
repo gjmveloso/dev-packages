@@ -53,7 +53,7 @@ fi
 
 test -r "/usr/local/etc/profile.d/bash_completion.sh" && source "/usr/local/etc/profile.d/bash_completion.sh"
 
-plugins=(macos git aws npm docker kubectl vscode)
+plugins=(macos git aws npm docker kubectl pipenv vscode starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,12 +114,13 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-eval "$(pyenv init -)"
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(starship init zsh)"
+eval "$(pyenv init -)"
+
