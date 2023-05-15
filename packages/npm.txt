@@ -1,7 +1,7 @@
 /usr/local/lib
-├── aws-cdk@2.77.0
-├── eslint@8.39.0
-├── npm-check-updates@16.10.9
-├── npm@9.6.5
+├── aws-cdk@2.79.1
+├── eslint@8.40.0
+├── npm-check-updates@16.10.12
+├── npm@9.6.6
 └── typescript@5.0.4
 

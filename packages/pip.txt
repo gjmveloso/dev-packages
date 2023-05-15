@@ -1,6 +1,7 @@
 Package    Version
 ---------- -------
 cffi       1.15.1
+docutils   0.20
 pip        23.1.2
 pycparser  2.21
 setuptools 67.7.2

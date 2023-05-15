@@ -12,7 +12,6 @@ Dart-Code.flutter
 dbaeumer.vscode-eslint
 eamodio.gitlens
 EditorConfig.EditorConfig
-eg2.vscode-npm-script
 esbenp.prettier-vscode
 exiasr.hadolint
 foxundermoon.shell-format
@@ -39,7 +38,6 @@ ms-vscode.azure-repos
 ms-vscode.cpptools
 ms-vscode.remote-explorer
 ms-vscode.remote-repositories
-ms-vscode.vscode-typescript-tslint-plugin
 rebornix.ruby
 redhat.java
 redhat.vscode-commons

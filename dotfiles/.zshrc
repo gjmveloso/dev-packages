@@ -19,6 +19,7 @@ export HOMEBREW_EDITOR=code
 export PATH="/usr/local/opt/node@18/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
+export CHROME_EXECUTABLE="/Applications/Vivaldi.app/Contents/MacOS/Vivaldi"
 export PATH=$HOME/.toolbox/bin:$PATH
 
 export GOPROXY="direct"
@@ -114,7 +115,6 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
