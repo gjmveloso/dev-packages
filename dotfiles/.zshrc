@@ -1,9 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 
-export SHELL="/usr/local/bin/zsh"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export HOMEBREW_PREFIX=$(brew --prefix)
+export SHELL="$HOMEBREW_PREFIX/bin/zsh"
+export PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:~/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -16,7 +17,7 @@ export AWS_CLI_AUTO_PROMPT=on-partial
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
-export PATH="/usr/local/opt/node@18/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/node@18/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
 export CHROME_EXECUTABLE="/Applications/Vivaldi.app/Contents/MacOS/Vivaldi"
@@ -28,31 +29,31 @@ export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
 
 export KUBE_EDITOR='code --wait'
 
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@1.1/lib:$LDFLAGS"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@1.1/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
-export LDFLAGS="-L/usr/local/opt/ruby/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/ruby/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
-export CPPFLAGS="-I/usr/local/opt/sqlite/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/node@18/lib:$LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/node@18/include:$CPPFLAGS"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/ruby/lib:$LDFLAGS"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/ruby/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/sqlite/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/node@18/lib:$LDFLAGS"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/node@18/include:$CPPFLAGS"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
 if type brew &>/dev/null; then
-  FPATH=/usr/local/share/zsh/site-functions:$FPATH
-  FPATH=/usr/local/share/zsh-completions:$FPATH
-  FPATH=/usr/local/etc/bash_completion.d:$FPATH
-  FPATH=/usr/local/share/bash-completion/completions:$FPATH
+  FPATH=$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH
+  FPATH=$HOMEBREW_PREFIX/share/zsh-completions:$FPATH
+  FPATH=$HOMEBREW_PREFIX/etc/bash_completion.d:$FPATH
+  FPATH=$HOMEBREW_PREFIX/share/bash-completion/completions:$FPATH
   autoload -Uz compinit && compinit
   autoload -Uz bashcompinit && bashcompinit
 fi
 
-test -r "/usr/local/etc/profile.d/bash_completion.sh" && source "/usr/local/etc/profile.d/bash_completion.sh"
+test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 
 plugins=(macos git aws npm docker kubectl pipenv vscode starship)
 
@@ -60,7 +61,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# export MANPATH="$HOMEBREW_PREFIX/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -115,8 +116,8 @@ zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 

@@ -89,7 +89,6 @@ drawio
 finch
 firefox
 flutter
-flux
 font-fira-code
 font-fira-code-nerd-font
 insomnia
