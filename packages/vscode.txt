@@ -1,6 +1,7 @@
 adpyke.vscode-sql-formatter
 amazonwebservices.aws-toolkit-vscode
 asciidoctor.asciidoctor-vscode
+ban.spellright
 be5invis.toml
 budparr.language-hugo-vscode
 christian-kohler.npm-intellisense

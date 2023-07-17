@@ -5,11 +5,9 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "python.pythonPath": "/usr/local/bin/python3",
   "python.languageServer": "Pylance",
-  "editor.fontFamily": "'FiraCode', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'FiraCode Nerd Font Mono', 'FiraCode', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "aws.onDefaultRegionMissing": "add",
   "vsicons.dontShowNewVersionMessage": true,
   "git.confirmSync": false,
   "yaml.customTags": [
@@ -128,7 +126,6 @@
   "go.delveConfig": {
   
   },
-  "react-native-tools.showUserTips": false,
   "update.showReleaseNotes": false,
   "git.openRepositoryInParentFolders": "always",
   "remote.SSH.defaultExtensions": [
@@ -138,4 +135,6 @@
     "remoteConnected": true
   },
   "application.shellEnvironmentResolutionTimeout": 20,
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "cSpell.dictionaryDefinitions": [],
 }

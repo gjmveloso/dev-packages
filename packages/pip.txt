@@ -1,9 +1,6 @@
 Package           Version
 ----------------- -------
-cffi              1.15.1
-docutils          0.20.1
-pip               23.1.2
-pycparser         2.21
-setuptools        67.8.0
-typing_extensions 4.6.2
+pip               23.2
+setuptools        68.0.0
+typing_extensions 4.7.1
 wheel             0.40.0

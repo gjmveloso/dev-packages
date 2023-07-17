@@ -14,13 +14,13 @@ export SAM_CLI_TELEMETRY=0
 
 export AWS_CLI_AUTO_PROMPT=on-partial
 
-export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_EDITOR=code
 
 export PATH="$HOMEBREW_PREFIX/opt/node@18/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
-export CHROME_EXECUTABLE="/Applications/Vivaldi.app/Contents/MacOS/Vivaldi"
+export CHROME_EXECUTABLE="/Applications/Chromium.app/Contents/MacOS/Chromium"
+
 export PATH=$HOME/.toolbox/bin:$PATH
 
 export GOPROXY="direct"
@@ -49,7 +49,7 @@ if type brew &>/dev/null; then
   FPATH=$HOMEBREW_PREFIX/share/zsh-completions:$FPATH
   FPATH=$HOMEBREW_PREFIX/etc/bash_completion.d:$FPATH
   FPATH=$HOMEBREW_PREFIX/share/bash-completion/completions:$FPATH
-  autoload -Uz compinit && compinit
+  autoload -Uz compinit && compinit -i
   autoload -Uz bashcompinit && bashcompinit
 fi
 
@@ -111,6 +111,7 @@ alias gzip="gtar -zcvf"
 alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Office/Outlook/Outlook\ 15\ Profiles/Main\ Profile/Data"
 alias firefox-backup="bzip firefox.tbz ~/Library/Application\ Support/Firefox/Profiles"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
+alias chromium-sync="rm -rf ~/Library/Application\ Support/Chromium/NativeMessagingHosts && cp -R ~/Library/Application\ Support/Google/Chrome/NativeMessagingHosts ~/Library/Application\ Support/Chromium/"
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
