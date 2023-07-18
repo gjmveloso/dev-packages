@@ -50,7 +50,7 @@ if type brew &>/dev/null; then
   FPATH=$HOMEBREW_PREFIX/etc/bash_completion.d:$FPATH
   FPATH=$HOMEBREW_PREFIX/share/bash-completion/completions:$FPATH
   autoload -Uz compinit && compinit -i
-  autoload -Uz bashcompinit && bashcompinit
+  autoload -Uz bashcompinit && bashcompinit -i
 fi
 
 test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
@@ -112,6 +112,7 @@ alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Offic
 alias firefox-backup="bzip firefox.tbz ~/Library/Application\ Support/Firefox/Profiles"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias chromium-sync="rm -rf ~/Library/Application\ Support/Chromium/NativeMessagingHosts && cp -R ~/Library/Application\ Support/Google/Chrome/NativeMessagingHosts ~/Library/Application\ Support/Chromium/"
+alias flush-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
