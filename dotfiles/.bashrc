@@ -1,4 +1,3 @@
-export PATH=$HOME/.toolbox/bin:$PATH
 
 if type brew &>/dev/null; then
   HOMEBREW_PREFIX="$(brew --prefix)"

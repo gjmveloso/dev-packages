@@ -21,8 +21,6 @@ export PATH="$HOMEBREW_PREFIX/opt/node@18/bin:$PATH"
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
 export CHROME_EXECUTABLE="/Applications/Chromium.app/Contents/MacOS/Chromium"
 
-export PATH=$HOME/.toolbox/bin:$PATH
-
 export GOPROXY="direct"
 
 export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
@@ -41,19 +39,19 @@ export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PA
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/node@18/lib:$LDFLAGS"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/node@18/include:$CPPFLAGS"
 
-# Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
-
 if type brew &>/dev/null; then
   FPATH=$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH
   FPATH=$HOMEBREW_PREFIX/share/zsh-completions:$FPATH
   FPATH=$HOMEBREW_PREFIX/etc/bash_completion.d:$FPATH
   FPATH=$HOMEBREW_PREFIX/share/bash-completion/completions:$FPATH
   autoload -Uz compinit && compinit -i
-  autoload -Uz bashcompinit && bashcompinit -i
+  autoload -Uz bashcompinit && bashcompinit
 fi
 
 test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
+
+# Path to your oh-my-zsh installation.
+export ZSH=~/.oh-my-zsh
 
 plugins=(macos git aws npm docker kubectl pipenv vscode starship)
 

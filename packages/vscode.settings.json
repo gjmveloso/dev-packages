@@ -75,7 +75,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "go.toolsManagement.autoUpdate": true,
-  "workbench.editor.untitled.hint": "hidden",
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -137,4 +136,5 @@
   "application.shellEnvironmentResolutionTimeout": 20,
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "cSpell.dictionaryDefinitions": [],
+  "workbench.editor.empty.hint": "hidden",
 }
