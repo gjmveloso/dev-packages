@@ -2,7 +2,7 @@
 
 export HOMEBREW_PREFIX=$(brew --prefix)
 export SHELL="$HOMEBREW_PREFIX/bin/zsh"
-export PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/openssl@3/bin:$PATH"
 export PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:~/bin:$PATH"
 export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
 
@@ -16,10 +16,10 @@ export AWS_CLI_AUTO_PROMPT=on-partial
 
 export HOMEBREW_EDITOR=code
 
-export PATH="$HOMEBREW_PREFIX/opt/node@18/bin:$PATH"
+export PATH="$HOMEBREW_PREFIX/opt/node@22/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
-export CHROME_EXECUTABLE="/Applications/Chromium.app/Contents/MacOS/Chromium"
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 
 export GOPROXY="direct"
 
@@ -27,17 +27,17 @@ export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
 
 export KUBE_EDITOR='code --wait'
 
-export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@1.1/lib:$LDFLAGS"
-export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@1.1/include:$CPPFLAGS"
-export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@1.1/lib/pkgconfig:$PKG_CONFIG_PATH"
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@3/lib:$LDFLAGS"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@3/include:$CPPFLAGS"
+export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/openssl@3/lib/pkgconfig:$PKG_CONFIG_PATH"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@3)"
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/ruby/lib:$LDFLAGS"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/ruby/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/ruby/lib/pkgconfig:$PKG_CONFIG_PATH"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/sqlite/include:$CPPFLAGS"
 export PKG_CONFIG_PATH="$HOMEBREW_PREFIX/opt/sqlite/lib/pkgconfig:$PKG_CONFIG_PATH"
-export LDFLAGS="-L$HOMEBREW_PREFIX/opt/node@18/lib:$LDFLAGS"
-export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/node@18/include:$CPPFLAGS"
+export LDFLAGS="-L$HOMEBREW_PREFIX/opt/node@22/lib:$LDFLAGS"
+export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/node@22/include:$CPPFLAGS"
 
 if type brew &>/dev/null; then
   FPATH=$HOMEBREW_PREFIX/share/zsh/site-functions:$FPATH
@@ -45,7 +45,7 @@ if type brew &>/dev/null; then
   FPATH=$HOMEBREW_PREFIX/etc/bash_completion.d:$FPATH
   FPATH=$HOMEBREW_PREFIX/share/bash-completion/completions:$FPATH
   autoload -Uz compinit && compinit -i
-  autoload -Uz bashcompinit && bashcompinit
+  autoload -Uz bashcompinit && bashcompinit -i
 fi
 
 test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
@@ -101,12 +101,10 @@ HISTFILE=~/.history
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias atom="code"
 alias myip="curl ipinfo.io | jq .ip"
 alias myip-json="curl ipinfo.io | jq"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
-alias outlook-backup="bzip Mail.tbz ~/Library/Group\ Containers/UBF8T346G9.Office/Outlook/Outlook\ 15\ Profiles/Main\ Profile/Data"
 alias firefox-backup="bzip firefox.tbz ~/Library/Application\ Support/Firefox/Profiles"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias chromium-sync="rm -rf ~/Library/Application\ Support/Chromium/NativeMessagingHosts && cp -R ~/Library/Application\ Support/Google/Chrome/NativeMessagingHosts ~/Library/Application\ Support/Chromium/"
@@ -124,4 +122,3 @@ export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(pyenv init -)"
-

@@ -22,8 +22,12 @@ echo "Copying VSCode extensions ..."
 code --list-extensions > packages/vscode.txt
 echo "Copying VSCode settings ..."
 cp ~/Library/Application\ Support\/Code/User/settings.json packages/vscode.settings.json
+echo "Copying Zed settings ..."
+cp ~/.config/zed/settings.json dotfiles/zed.settings.json
 echo "Copying global .zshrc ..."
 cp ~/.zshrc dotfiles/.zshrc
+echo "Copying global .zprofile ..."
+cp ~/.zprofile dotfiles/.zprofile
 echo "Copying global .bashrc ..."
 cp ~/.bashrc dotfiles/.bashrc
 echo "Copying global .starship.toml ..."

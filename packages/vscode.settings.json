@@ -137,4 +137,10 @@
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "cSpell.dictionaryDefinitions": [],
   "workbench.editor.empty.hint": "hidden",
+  "amazonQ.telemetry": false,
+  "amazonQ.suppressPrompts": {
+    "codeWhispererConnectionExpired": true
+  },
+  "editor.codeActionsOnSave": {},
+  "cSpell.customDictionaries": {},
 }
