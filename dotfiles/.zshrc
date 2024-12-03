@@ -14,7 +14,7 @@ export SAM_CLI_TELEMETRY=0
 
 export AWS_CLI_AUTO_PROMPT=on-partial
 
-export HOMEBREW_EDITOR=code
+export HOMEBREW_EDITOR=zed
 
 export PATH="$HOMEBREW_PREFIX/opt/node@22/bin:$PATH"
 
@@ -25,7 +25,7 @@ export GOPROXY="direct"
 
 export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
 
-export KUBE_EDITOR='code --wait'
+export KUBE_EDITOR='zed --wait'
 
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@3/lib:$LDFLAGS"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@3/include:$CPPFLAGS"
@@ -53,7 +53,7 @@ test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-plugins=(macos git aws npm docker kubectl pipenv vscode starship)
+plugins=(macos git aws npm docker kubectl pipenv starship)
 
 source $ZSH/oh-my-zsh.sh
 
