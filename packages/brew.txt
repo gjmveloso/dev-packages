@@ -12,9 +12,9 @@ anchore/syft/syft
 aquasecurity/trivy/trivy
 awscli
 bash-completion
+bat
 cfn-lint
 cloudformation-guard
-cocoapods
 colima
 difftastic
 docker
@@ -26,7 +26,6 @@ gitleaks
 gnu-tar
 go
 grep
-guile
 hadolint
 hashicorp/tap/packer
 hashicorp/tap/terraform
@@ -36,18 +35,16 @@ jq
 ko
 kubectx
 kubie
-lua
 media-info
 mise
 node@22
 ollama
 openssh
-pipenv
 pipx
 pnpm
 pre-commit
-pyenv
 python-typing-extensions
+rust
 semgrep
 starship
 trippy
@@ -71,7 +68,7 @@ firefox
 flux
 font-fira-code
 font-fira-code-nerd-font
-iterm2
+ghostty
 keepingyouawake
 maccy
 obs
@@ -79,7 +76,5 @@ qlmarkdown
 rectangle
 spotify
 the-unarchiver
-visual-studio-code
 vlc
-wealthfolio
 zed

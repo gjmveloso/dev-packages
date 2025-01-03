@@ -53,7 +53,7 @@ test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-plugins=(macos git aws npm docker kubectl pipenv starship)
+plugins=(macos git aws docker kubectl starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,4 +121,4 @@ export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-eval "$(pyenv init -)"
+eval "$(mise activate zsh)"
