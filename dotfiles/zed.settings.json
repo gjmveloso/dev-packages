@@ -9,8 +9,8 @@
 {
   "assistant": {
     "default_model": {
-      "provider": "ollama",
-      "model": "qwen2.5-coder:1.5b-instruct-q4_K_M"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -20,6 +20,7 @@
   "ui_font_size": 14,
   "buffer_font_size": 14,
   "buffer_font_family": "FiraCode Nerd Font Mono",
+  "soft_wrap": "editor_width",
   "theme": {
     "mode": "system",
     "light": "Catppuccin Frappé",
