@@ -1,9 +1,11 @@
+command_timeout = 2500
+
 [aws]
 symbol = "  "
 
 [buf]
 symbol = " "
-format = '(with [$symbol$version ]($style))'
+format = '(with [$symbol($version )]($style))'
 
 [c]
 symbol = " "
@@ -12,22 +14,30 @@ format = '(via [$symbol($version(-$name) )]($style))'
 [conda]
 symbol = " "
 
+[crystal]
+symbol = " "
+format = '(via [$symbol($version )]($style))'
+
 [dart]
 symbol = " "
 format = '(via [$symbol($version )]($style))'
 
 [directory]
-read_only = " "
+read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
 
 [elixir]
-symbol = " "
+symbol = " "
 format = '(via [$symbol($version \(OTP $otp_version\) )]($style))'
 
 [elm]
 symbol = " "
+format = '(via [$symbol($version )]($style))'
+
+[fennel]
+symbol = " "
 format = '(via [$symbol($version )]($style))'
 
 [fossil_branch]
@@ -35,6 +45,9 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+
+[git_commit]
+tag_symbol = '  '
 
 [golang]
 symbol = " "
@@ -48,10 +61,13 @@ symbol = " "
 format = '(via [$symbol($version )]($style))'
 
 [haxe]
-symbol = "⌘ "
+symbol = " "
 
 [hg_branch]
 symbol = " "
+
+[hostname]
+ssh_symbol = " "
 
 [java]
 symbol = " "
@@ -61,18 +77,22 @@ format = '(via [$symbol($version )]($style))'
 symbol = " "
 format = '(via [$symbol($version )]($style))'
 
+[kotlin]
+symbol = " "
+format = '(via [$symbol($version )]($style))'
+
 [lua]
 symbol = " "
 format = '(via [$symbol($version )]($style))'
 
 [memory_usage]
-symbol = " "
+symbol = "󰍛 "
 
 [meson]
-symbol = "喝 "
+symbol = "󰔷 "
 
 [nim]
-symbol = " "
+symbol = "󰆥 "
 format = '(via [$symbol($version )]($style))'
 
 [nix_shell]
@@ -82,11 +102,18 @@ symbol = " "
 symbol = " "
 format = '(via [$symbol($version )]($style))'
 
+[ocaml]
+symbol = " "
+format = '(via [$symbol($version )(\($switch_indicator$switch_name\) )]($style))'
+
 [os.symbols]
+Alpaquita = " "
 Alpine = " "
+AlmaLinux = " "
 Amazon = " "
 Android = " "
 Arch = " "
+Artix = " "
 CentOS = " "
 Debian = " "
 DragonFly = " "
@@ -94,11 +121,13 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "﯑ "
+Garuda = "󰛓 "
 Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Kali = " "
 Linux = " "
+Mabox = " "
 Macos = " "
 Manjaro = " "
 Mariner = " "
@@ -106,46 +135,66 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-OpenBSD = " "
+OpenBSD = "󰈺 "
 openSUSE = " "
-OracleLinux = " "
-Pop = " "
+OracleLinux = "󰌷 "
+Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
+RockyLinux = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
-Windows = " "
+Void = " "
+Windows = "󰍲 "
 
 [package]
-symbol = " "
+symbol = "󰏗 "
 format = '(is [$symbol$version]($style) )'
 
+[perl]
+symbol = " "
+format = '(via [$symbol($version )]($style))'
+
+[php]
+symbol = " "
+format = '(via [$symbol($version )]($style))'
+
 [pijul_channel]
-symbol = "🪺 "
+symbol = " "
 
 [python]
 symbol = " "
 format = '(via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style))'
 
 [rlang]
-symbol = "ﳒ "
-format = '(via [$symbol($version )]($style))'
+symbol = "󰟔 "
 
 [ruby]
 symbol = " "
 format = '(via [$symbol($version )]($style))'
 
 [rust]
-symbol = " "
+symbol = "󱘗 "
 format = '(via [$symbol($version )]($style))'
 
 [scala]
 symbol = " "
 format = '(via [$symbol($version )]($style))'
+
+[swift]
+symbol = " "
+format = '(via [$symbol($version )]($style))'
+
+[zig]
+symbol = " "
+format = '(via [$symbol($version )]($style))'
+
+[gradle]
+symbol = " "
 
 [spack]
 symbol = "🅢 "
@@ -157,9 +206,6 @@ format = '(via [$symbol($version )]($style))'
 format = '(via [$symbol($version )]($style))'
 
 [cobol]
-format = '(via [$symbol($version )]($style))'
-
-[crystal]
 format = '(via [$symbol($version )]($style))'
 
 [daml]
@@ -174,26 +220,11 @@ format = '(via [$symbol($version )(🎯 $tfm )]($style))'
 [erlang]
 format = '(via [$symbol($version )]($style))'
 
-[fennel]
-format = '(via [$symbol($version )]($style))'
-
 [helm]
 format = '(via [$symbol($version )]($style))'
 
-[kotlin]
-format = '(via [$symbol($version )]($style))'
-
-[ocaml]
-format = '(via [$symbol($version )(\($switch_indicator$switch_name\) )]($style))'
-
 [opa]
 format = '(via [$symbo($version ]($style))"'
-
-[perl]
-format = '(via [$symbol($version )]($style))'
-
-[php]
-format = '(via [$symbol($version )]($style))'
 
 [purescript]
 format = '(via [$symbol($version )]($style))'
@@ -204,15 +235,8 @@ format = '(via [$symbol($version-$vm_version )]($style))'
 [red]
 format = '(via [$symbol($version )]($style))'
 
-[swift]
-format = '(via [$symbol($version )]($style))'
-
 [vagrant]
 format = '(via [$symbol($version )]($style))'
 
 [vlang]
 format = '(via [$symbol($version )]($style))'
-
-[zig]
-format = '(via [$symbol($version )]($style))'
-
