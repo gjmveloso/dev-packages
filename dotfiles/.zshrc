@@ -105,6 +105,7 @@ alias myip="curl ipinfo.io | jq .ip"
 alias myip-json="curl ipinfo.io | jq"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
+alias zst="gtar --zstd -cvf"
 alias firefox-backup="bzip firefox.tbz ~/Library/Application\ Support/Firefox/Profiles"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias chromium-sync="rm -rf ~/Library/Application\ Support/Chromium/NativeMessagingHosts && cp -R ~/Library/Application\ Support/Google/Chrome/NativeMessagingHosts ~/Library/Application\ Support/Chromium/"
@@ -122,3 +123,4 @@ export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(mise activate zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
