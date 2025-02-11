@@ -8,24 +8,21 @@ export PATH="$HOMEBREW_PREFIX/opt/ruby/bin:$PATH"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
+export DOTNET_ROOT="$HOMEBREW_PREFIX/opt/dotnet/libexec"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
-export SAM_CLI_TELEMETRY=0
-
-export AWS_CLI_AUTO_PROMPT=on-partial
-
-export HOMEBREW_EDITOR=zed
+export OLLAMA_KEEP_ALIVE=10m
 
 export PATH="$HOMEBREW_PREFIX/opt/node@22/bin:$PATH"
 
 export PATH="${HOME}/Library/Android/sdk/tools:${HOME}/Library/Android/sdk/platform-tools:${PATH}"
-export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 
 export GOPROXY="direct"
 
 export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
 
 export KUBE_EDITOR='zed --wait'
+export AIDER_EDITOR='zed --wait'
 
 export LDFLAGS="-L$HOMEBREW_PREFIX/opt/openssl@3/lib:$LDFLAGS"
 export CPPFLAGS="-I$HOMEBREW_PREFIX/opt/openssl@3/include:$CPPFLAGS"
@@ -53,7 +50,7 @@ test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-plugins=(macos git aws docker kubectl starship)
+plugins=(macos git aws gcloud docker kubectl starship)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,21 +103,15 @@ alias myip-json="curl ipinfo.io | jq"
 alias bzip="gtar -jcvf"
 alias gzip="gtar -zcvf"
 alias zst="gtar --zstd -cvf"
-alias firefox-backup="bzip firefox.tbz ~/Library/Application\ Support/Firefox/Profiles"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
-alias chromium-sync="rm -rf ~/Library/Application\ Support/Chromium/NativeMessagingHosts && cp -R ~/Library/Application\ Support/Google/Chrome/NativeMessagingHosts ~/Library/Application\ Support/Chromium/"
 alias flush-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
-zstyle ':bracketed-paste-magic' active-widgets '.self-*'
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
 
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-export JAVA_TOOLS_OPTIONS="-Dlog4j2.formatMsgNoLookups=true"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 eval "$(mise activate zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
