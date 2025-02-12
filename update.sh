@@ -8,10 +8,6 @@ brew leaves >> packages/brew.txt
 brew list --cask >> packages/brew.txt
 echo "npm"
 npm list -g --depth=0 > packages/npm.txt
-echo "pip"
-pip3 list --format columns > packages/pip.txt
-echo "gems"
-gem list > packages/gems.txt
 echo "
 
 Copying global .gitignore ..."
