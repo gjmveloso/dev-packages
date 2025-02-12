@@ -26,7 +26,9 @@ echo "Copying global .zshrc ..."
 cp ~/.zshrc dotfiles/.zshrc
 echo "Copying global .zprofile ..."
 cp ~/.zprofile dotfiles/.zprofile
-echo "Copying global .bashrc ..."
-cp ~/.bashrc dotfiles/.bashrc
+echo "Copying vale styles ..."
+cp -R ~/styles packages/styles
+echo "Copying vale global config ..."
+cp ~/.vale.ini dotfiles/.vale.ini
 echo "Copying global .starship.toml ..."
 cp ~/.config/starship.toml dotfiles/.starship.toml

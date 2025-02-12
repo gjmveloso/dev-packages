@@ -21,6 +21,7 @@ export GOPROXY="direct"
 
 export PATH="$PATH:${GOPATH:-$HOME/go}/bin"
 
+export EDITOR='zed --wait'
 export KUBE_EDITOR='zed --wait'
 export AIDER_EDITOR='zed --wait'
 
@@ -42,15 +43,15 @@ if type brew &>/dev/null; then
   FPATH=$HOMEBREW_PREFIX/etc/bash_completion.d:$FPATH
   FPATH=$HOMEBREW_PREFIX/share/bash-completion/completions:$FPATH
   autoload -Uz compinit && compinit -i
-  autoload -Uz bashcompinit && bashcompinit -i
 fi
 
-test -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" && source "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
-plugins=(macos git aws gcloud docker kubectl starship)
+plugins=(macos git gcloud docker kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,12 +107,10 @@ alias zst="gtar --zstd -cvf"
 alias refresh-launchpad="defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock"
 alias flush-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
+eval "$(mise activate zsh)"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"
 
-source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source $HOMEBREW_PREFIX/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+eval "$(starship init zsh)"
 
 source <(fzf --zsh)
-
-eval "$(mise activate zsh)"
